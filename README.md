@@ -2,35 +2,23 @@
 
 Coil-array magnetic-field sensing block designed and implemented by Jack Fraley.
 
-This repository is prepared for sharing on GitHub and includes:
+## Overview
 
-- KiCad source files for the board/schematic
-- Gerber manufacturing outputs
-- Revised interface validation aligned to the **current** components
-- A repeatable validation script for schematic/PCB consistency
+This repository contains the hardware design package for the Coil Array board, including source design files, fabrication outputs, and project documentation.
 
-## Repository Layout
+## Hardware Design Files
 
-- `hardware/kicad/CoilArrayBlock/`
-  - `CoilArrayBlock.kicad_sch`
-  - `CoilArrayBlock.kicad_pcb`
-  - `CoilArrayBlock.kicad_pro`
-  - `CT-0705-HA-new.pretty/` (local footprint library)
-  - `Gerber/` and `CoilArrayBlock-job.gbrjob`
-- `docs/Interface-Validation-Revised.md`
-- `scripts/validate_interface.py`
+- [CoilArrayBlock.kicad_sch](/Users/jackfraley/Downloads/Coil Array/hardware/kicad/CoilArrayBlock/CoilArrayBlock.kicad_sch)
+- [CoilArrayBlock.kicad_pcb](/Users/jackfraley/Downloads/Coil Array/hardware/kicad/CoilArrayBlock/CoilArrayBlock.kicad_pcb)
+- [CoilArrayBlock.kicad_pro](/Users/jackfraley/Downloads/Coil Array/hardware/kicad/CoilArrayBlock/CoilArrayBlock.kicad_pro)
+- [fp-lib-table](/Users/jackfraley/Downloads/Coil Array/hardware/kicad/CoilArrayBlock/fp-lib-table)
+- [JaxisSilkscreenLogo.kicad_sym](/Users/jackfraley/Downloads/Coil Array/hardware/kicad/CoilArrayBlock/JaxisSilkscreenLogo.kicad_sym)
 
-## Validation
+## Fabrication Outputs
 
-Run:
+- [Gerber Manufacturing Files](/Users/jackfraley/Downloads/Coil Array/hardware/kicad/CoilArrayBlock/Gerber)
+- [Gerber Job File](/Users/jackfraley/Downloads/Coil Array/hardware/kicad/CoilArrayBlock/CoilArrayBlock-job.gbrjob)
 
-```bash
-python3 scripts/validate_interface.py
-```
+## Documentation
 
-The script validates required interfaces/components and calculates derived values from current parts (instrumentation-amplifier gain and output RC cutoff).
-
-## Notes
-
-- Interface numbers in the revised document are updated to match the present schematic values.
-- Output-amplitude units were corrected to `mV`.
+- [Coil Array.pdf](/Users/jackfraley/Downloads/Coil Array/docs/Coil Array.pdf)
